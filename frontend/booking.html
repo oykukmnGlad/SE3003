@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ReserveStudio - Book Studio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Book Recording Studio</h2>
+    
+    <div class="booking-section">
+      <label for="booking-date">Select Date:</label>
+      <input type="date" id="booking-date" required>
+
+      <h3>Available Hourly Slots</h3>
+      <div class="slots-grid">
+        <button class="slot available">10:00 - 11:00</button>
+        <button class="slot booked" disabled>11:00 - 12:00 (Booked)</button>
+        <button class="slot available">12:00 - 13:00</button>
+        <button class="slot available">13:00 - 14:00</button>
+      </div>
+
+      <button id="confirm-btn">Confirm Reservation</button>
+    </div>
+  </div>
+</body>
+</html>
