@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ReserveStudio - Sign Up</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>ReserveStudio</h1>
+    <h2>Campus Studio & Equipment Booking</h2>
+
+    <form id="signup-form">
+      <h3>Create Account</h3>
+      <input type="text" id="username" placeholder="Username (3-50 characters)" minlength="3" maxlength="50" required>
+      <input type="email" id="email" placeholder="Student Email (@mugla.edu.tr)" maxlength="100" required>
+      <input type="password" id="password" placeholder="Password (min 8 characters)" minlength="8" maxlength="72" required>
+      <button type="submit">Sign Up</button>
+    </form>
+
+    <p id="message" class="message"></p>
+    <p class="alt-link">Already have an account? <a href="index.html">Login</a></p>
+  </div>
+  <script src="api.js"></script>
+  <script src="signup.js"></script>
+</body>
+</html>

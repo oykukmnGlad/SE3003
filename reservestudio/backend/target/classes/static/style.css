@@ -1,0 +1,125 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  margin: 0;
+  padding: 20px;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  background: white;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+input, button {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.slots-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin: 15px 0;
+}
+
+.slot.booked {
+  background-color: #dc3545;
+  cursor: not-allowed;
+}
+
+.cancel-btn {
+  background-color: #dc3545;
+}
+/* ---- Backend bağlantısı için eklenenler ---- */
+.nav {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+.nav a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.nav a.active {
+  font-weight: bold;
+}
+
+.nav .user {
+  margin-left: auto;
+  color: #555;
+}
+
+.message {
+  padding: 10px;
+  border-radius: 4px;
+  margin: 10px 0;
+}
+
+.message:empty {
+  display: none;
+}
+
+.message.error {
+  background: #f8d7da;
+  color: #842029;
+}
+
+.message.success {
+  background: #d1e7dd;
+  color: #0f5132;
+}
+
+.slot.selected {
+  background-color: #198754;
+}
+
+.slot:disabled {
+  cursor: not-allowed;
+}
+
+#confirm-btn:disabled {
+  background-color: #9ec5fe;
+  cursor: not-allowed;
+}
+
+.reservation-card {
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 12px 15px;
+  margin: 10px 0;
+}
+
+.reservation-card.past {
+  opacity: 0.6;
+}
+
+.empty-text {
+  color: #666;
+}
+
+.alt-link {
+  text-align: center;
+}
