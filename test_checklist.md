@@ -21,3 +21,4 @@
 
 #### 4. UI & Usability Edge Cases
 - [x] **TC-9:** Is a confirmation message successfully displayed to the user once the booking process is complete?- PASS
+- [x] **TC-10: Can a user successfully select an available time slot and submit a valid booking request without unexpected errors? - PASS
