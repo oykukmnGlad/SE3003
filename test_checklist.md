@@ -2,9 +2,8 @@
 **Document:** MVP Test Checklist & Manual Test Cases  
 **Owner:** Eylül Ela Ata (Tester/Debugger)  
 **Target:** WP-05 / EST-04 (Test Checklist & Manual Testing - 6 Hours)  
-**Tested by:** Eylül Ela Ata | **Date:** 20.10.2026  
+**Tested by:** Eylül Ela Ata | **Date:** 25.11.2026  
 **Environment:** Microsoft Edge, local MySQL 8, backend started with `mvn spring-boot:run`, app at http://localhost:8080  
-**Evidence:** [link or folder with screenshots]
 
 ---
 
@@ -15,23 +14,23 @@
 
 #### 2. Studio & Slot Management Tests
 - [x] **TC-04:** Are the main studio's hourly calendar and availability status correctly listed on the screen? — **PASS**
-- [x] **TC-05:** Are users prevented from booking past hours or dates? — **PASS** (note: [date picker blocks past days / backend rejects past slots])
+- [x] **TC-05:** Are users prevented from booking past hours or dates? — **PASS** (the date picker blocks past days; past hours of today appear as "Unavailable")
 - [x] **TC-06:** Do occupied time slots appear as "Unavailable" or locked on the screen? — **PASS**
 
 #### 3. Conflict Resolution & Overlap Defense Tests
-- [x] **TC-07:** When two different users attempt to book the exact same studio and time slot simultaneously (Race Condition / Double-booking), does the database UNIQUE constraint and backend validation block the second user? — **PASS** (evidence: automated ConcurrentBookingTest, 20 parallel requests: 1 success, 19 conflicts; manual two-browser check: (not done)
-- [x] **TC-08:** Does a time slot immediately close for other users right after a successful booking? — **PASS**
+- [ ] **TC-07:** When two different users attempt to book the exact same studio and time slot simultaneously (Race Condition / Double-booking), does the database UNIQUE constraint and backend validation block the second user? — **Not Run** 
+- [ ] **TC-08:** Does a time slot immediately close for other users right after a successful booking? — **Not Run**
 
 #### 4. UI & Usability Edge Cases
 - [x] **TC-09:** Is a confirmation message successfully displayed to the user once the booking process is complete? — **PASS**
 - [x] **TC-10:** Can a user successfully select an available time slot and submit a valid booking request without unexpected errors? — **PASS**
 
 #### 5. Booking Cancellation Tests
-- [x] **TC-11:** Can a user cancel an upcoming booking from My Bookings, and does the slot become available again for booking? — PASS
-- [x] **TC-12:** Are past reservations listed only under "Past Reservations", without a Cancel button? — PASS
+- [x] **TC-11:** Can a user cancel an upcoming booking from My Bookings, and does the slot become available again for booking? — **PASS**
+- [x] **TC-12:** Are past reservations listed only under "Past Reservations", without a Cancel button? — **PASS**
 
 ---
 
 #### Summary
-- Total test cases: 12 | Passed: 12 | Failed: 0 | Not run: 0
+- Total test cases: 12 | Passed: 10 | Failed: 0 | Not run: 2
 - Bugs found: none
