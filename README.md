@@ -14,7 +14,7 @@
 * `reservestudio/` — **Active & integrated codebase**
   * `backend/` — Java Spring Boot REST API, JUnit integration/concurrency tests, and MySQL schema (`backend/db/reservestudio_db.sql`)
   * `frontend/` — HTML, CSS, and JavaScript client pages (`index.html`, `signup.html`, `booking.html`, `dashboard.html`, `api.js`)
-* `test_checklist.md` — Manual QA test checklist (`TC-01` – `TC-10`)
+* `test_checklist.md` — Manual QA test checklist (`TC-01` – `TC-12`)
 * `*.pdf` — Milestone reports (`M0`, `M1`, `M2`, `M3`) and weekly progress reports
 
 ## How to Run Locally
