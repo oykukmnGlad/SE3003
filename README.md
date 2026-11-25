@@ -1,4 +1,5 @@
 # ReserveStudio — Campus Studio & Equipment Booking System
+> **Active code:** `reservestudio/` (backend + frontend). The folders `Backend/`, `reservestudio-backend2/`, `frontend/` and `Db/` are older drafts kept for history.
 
 **Course:** SE3003 – Software Project Management  
 **Team:** ReserveStudio  
@@ -20,3 +21,10 @@
 1. **Database Setup (MySQL 8+):**
    ```bash
    mysql -u root -p < reservestudio/backend/db/reservestudio_db.sql
+   ```
+2. **Start the backend:**
+   ```bash
+   cd reservestudio/backend
+   mvn spring-boot:run
+   ```
+3. **Open the app:** http://localhost:8080
