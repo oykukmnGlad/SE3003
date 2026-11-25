@@ -27,8 +27,8 @@
 - [x] **TC-10:** Can a user successfully select an available time slot and submit a valid booking request without unexpected errors? — **PASS**
 
 #### 5. Booking Cancellation Tests
-- [ ] **TC-11:** Can a user cancel an upcoming booking from My Bookings, and does the slot become available again for booking? — [PASS / FAIL / not run]
-- [ ] **TC-12:** Are past reservations listed only under "Past Reservations", without a Cancel button? — [PASS / FAIL / not run]
+- [x] **TC-11:** Can a user cancel an upcoming booking from My Bookings, and does the slot become available again for booking? — [PASS / FAIL / not run]
+- [x] **TC-12:** Are past reservations listed only under "Past Reservations", without a Cancel button? — [PASS / FAIL / not run]
 
 ---
 
