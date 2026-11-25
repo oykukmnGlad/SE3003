@@ -13,7 +13,7 @@
 #### 2. Studio & Slot Management Tests
 - [x] **TC-04:** Are the main studio's hourly calendar and availability status correctly listed on the screen?- PASS
 - [x] **TC-05:** Are users prevented from booking past hours or dates?- PASS
-- [x] **TC-06:** Do occupied time slots appear as "Reserved" or locked on the screen?- PASS
+- [x] **TC-06:** Do occupied time slots appear as "Unavailable" or locked on the screen?- PASS
 
 #### 3. Conflict Resolution & Overlap Defense Tests
 - [x] **TC-07:** When two different users attempt to book the exact same studio and time slot - PASSsimultaneously (Race Condition / Double-booking), does the database UNIQUE constraint and backend validation block the second user?- PASS
